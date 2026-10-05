@@ -69,7 +69,7 @@ An optional experiment upscales native-resolution frames by 4×—or 16×— bef
 | `sr_modular/` | Model architectures, loss functions, data preparation, training, evaluation, and utilities |
 | `sr_project_outputs/metrics/` | Recorded training histories and the SR validation/test summary |
 
-Generated checkpoints are saved under `sr_project_outputs/checkpoints/`. The VFI notebook writes results under its configured `SR_OUTPUTS_ROOT/vfi_comparisons/`, with separate folders for the standard 4Ã— benchmark and optional native-upscale experiments.
+Generated checkpoints are saved under `sr_project_outputs/checkpoints/`. The VFI notebook writes results under its configured `SR_OUTPUTS_ROOT/vfi_comparisons/`, with separate folders for the standard 4x— benchmark and optional native-upscale experiments.
 
 ## Recorded SR results
 
