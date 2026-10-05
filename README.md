@@ -87,8 +87,6 @@ The notebooks were developed for Google Colab and include Drive mounting cells a
 4. Obtain the [TLBVFI repository](https://github.com/ZonglinL/TLBVFI), its dependencies, and pretrained weights. Configure the wrapper's repository, dataset, output, and checkpoint paths.
 5. Run the VFI wrapper to compare the available SRGAN variants on selected Vimeo test triplets.
 
-The checked-in SR notebook currently overrides the configuration to train **Huber only**, with **20 epochs per stage** and an **80/10/10 frame split**. Edit these settings to run all seven losses or another experiment. Datasets and model checkpoints are not included in this repository snapshot; the committed metrics can be inspected independently of training.
-
 ## Acknowledgment
 
 The interpolation stage uses **TLB-VFI: Temporal-Aware Latent Brownian Bridge Diffusion for Video Frame Interpolation**, by Zonglin Lyu and Chen Chen. Credit for the TLB-VFI architecture, pretrained weights, and original implementation belongs to its authors.
