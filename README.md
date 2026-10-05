@@ -58,7 +58,7 @@ The expected research outcome is a comparison of loss functions: which objective
 
 Quality is measured with **PSNR** and **SSIM**, where higher values indicate closer agreement with the reference under each metric. The SR module computes these metrics on the luminance (Y) channel, while the VFI wrapper computes them on RGB images. Scores from the two evaluation paths should be interpreted within their respective settings.
 
-An optional experiment upscales native-resolution frames by 4Ã— or 16Ã— before interpolation, then resizes the outputs back to native resolution for evaluation. The 16Ã— case applies the 4Ã— SR model twice and can require substantial GPU memory.
+An optional experiment upscales native-resolution frames by 4×—or 16×— before interpolation, then resizes the outputs back to native resolution for evaluation. The 16× case applies the 4× SR model twice and may require substantial GPU memory.
 
 ## Repository guide
 
