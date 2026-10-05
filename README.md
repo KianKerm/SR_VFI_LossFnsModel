@@ -38,7 +38,7 @@ Each SRResNet variant initializes an SRGAN generator. The generator is then fine
 
 ### 4. Interpolate the missing middle frame
 
-The VFI notebook uses Vimeo-90K triplets containing `im1.png`, `im2.png`, and `im3.png`. In the standard benchmark, each frame is downsampled by 4Ã—, and each available SRGAN restores the frames to their original dimensions.
+The VFI notebook uses Vimeo-90K triplets containing `im1.png`, `im2.png`, and `im3.png`. In the standard benchmark, each frame is downsampled by 4x—, and each available SRGAN restores the frames to their original dimensions.
 
 The restored first and third frames are passed to a pretrained **TLB-VFI** model to predict the middle frame. The original high-resolution middle frame serves as the reference for evaluation; it is not supplied to TLB-VFI during prediction.
 
@@ -93,3 +93,4 @@ The interpolation stage uses **TLB-VFI: Temporal-Aware Latent Brownian Bridge Di
 
 - [Original TLBVFI repository and citation information](https://github.com/ZonglinL/TLBVFI)
 - [M.S. thesis on ProQuest](https://www.proquest.com/docview/3391144167/77E463CD2D394634PQ/1?sourcetype=Dissertations%20&%20Theses)
+- [M.S. defense presentation--mock version](https://www.youtube.com/watch?v=TGduKT1s6a4)
