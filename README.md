@@ -12,7 +12,7 @@ The workflow combines **super-resolution (SR)**, which reconstructs higher-resol
 
 The experiments use frames from Vimeo-90K. For SR training, cached image sequences are loaded into NumPy arrays and flattened into individual frames. The dataset code creates training, validation, and test splits, then generates paired low-resolution and high-resolution images using bicubic downsampling.
 
-The main SR configuration uses **4Ã— scaling in each spatial dimension**. Training uses random crops; validation and testing use images cropped to dimensions divisible by the scaling factor.
+The main SR configuration uses **4x— scaling in each spatial dimension**. Training uses random crops; validation and testing use images cropped to dimensions divisible by the scaling factor.
 
 ### 2. Train SRResNet with different loss functions
 
